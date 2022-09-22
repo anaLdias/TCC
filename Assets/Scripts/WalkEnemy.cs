@@ -51,7 +51,7 @@ public class WalkEnemy : MonoBehaviour
                 boxCollider2D.enabled = false;
                 circleCollider2D.enabled = false;
                 rig.bodyType = RigidbodyType2D.Kinematic;
-                
+                Destroy(circleCollider2D);
                 Destroy(gameObject, 0.4f);
             }else{
                 playerDestroyed = true;
